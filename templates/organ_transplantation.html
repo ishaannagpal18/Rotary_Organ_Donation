@@ -1,0 +1,166 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Organ Transplantation
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>Organ Transplantation</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>Organ Transplantation</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+            <h2 class="title">What is Organ Transplantation?</h2>
+            <div class="content">
+
+                <p>
+                  Organ Transplantation is a surgical procedure that involves the transplant of a healthy organ from a live/deceased donor into the body of the recipient (person with unhealthy organ/tissue). The process consist of a dedicated criteria which ranges from the maintenance of waiting list of donors, finding a suitable donor and then arranging the transplant procedure. At Rotary Organ Donation Foundation we assess individual needs related to transplantation and then we provide information to help you discover your suitable donor.
+                </p>
+
+            </div>
+
+
+
+
+    </div>
+  </section>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+
+      <div class="row gy-4" data-aos="fade-up">
+        <div class="col-lg-4">
+          <img src="{% static 'img/4.jpg'%} " class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="content ps-lg-5">
+            <h3>How it is performed?</h3>
+            <p>
+              There are three phases in transplantation process.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> The first phase is complete medical evaluation, which comprises of certain medical tests that decide whether it is safe and medically advisable for the patient to undergo transplantation.</li>
+              <li><i class="bi bi-check-circle-fill"></i> The Second phase is to locate and identify the suitable donor. In this phase there lies two possibilities; either receiving a living donor for transplant from a relative, friend or discovering a donor from national/international territories.</li>
+              <li><i class="bi bi-check-circle-fill"></i> The third phase of transplantation is the surgery. The surgery involves the removal of diseased organ(s) and the placement of the new organ. The surgery is followed by a stay in the hospital and a life-long course of medication to prevent rejection of the organ by recipient’s body.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Why Choose Us Section ======= -->
+  <section style="margin-bottom:5rem;" id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Who is involved in the process and what do they do?</h2>
+
+      </div>
+
+      <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-xl-5 img-bg" style="background-image: url('/static/img/5.jpg'); min-height: 0px;"></div>
+        <div class="col-xl-7 slides  position-relative">
+
+          <div style="margin: 3rem 8rem 0rem 8rem;" class="slides-1 swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Designated Officer</h3>
+                  <p>The Medical Superintendent or other responsible person appointed by hospitals under their state legislation. Once satisfied with the consents obtained, and having made reasonable inquiries that the deceased had not, during their lifetime, expressed an objection to the removal after death of their tissue, the designated officer mayauthorise the removal of the tissue.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Donor Coordinator</h3>
+                  <p>The person, who coordinates the donation, provides information and support to the donor family.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Intensivist</h3>
+                  <p>A doctor who specialises in the practice of intensive care medicine.</p>
+                </div>
+              </div><!-- End slide item -->
+
+
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Police</h3>
+                  <p>Will attend the ICU in coroner’s cases to identify the body of the deceased with the next of kin if the person has died where a coronial investigation is warranted, eg, a motor vehicle accident or assault.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Coroner</h3>
+                  <p>Investigates the circumstances of unnatural deaths and reports the cause. The Coroner must give consent for organ/tissue donation to occur and can impose restrictions on what can be donated.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Social Worker</h3>
+                  <p>Provides support to the family and assistance with practical issues.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Recipient Coordinator</h3>
+                  <p>The person who coordinates the transplant operation, provides information and support to the transplant recipient and their family. The recipient is usually being prepared for their operation is occurring.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Transplant Physicians</h3>
+                  <p>The doctors who care for the patient with end stage organ failure and who decide who the most suitable transplant recipient is. They are not involved in any way with donation.</p>
+                </div>
+              </div><!-- End slide item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Why Choose Us Section -->
+
+
+
+
+
+</main><!-- End #main -->
+
+{% endblock %}

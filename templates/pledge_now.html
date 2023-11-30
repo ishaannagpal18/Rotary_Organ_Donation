@@ -1,0 +1,308 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pledge Now</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/rotary_wheel.png'%} " rel="icon">
+  <link href="{% static 'img/rotary_wheel.png'%} " rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %} " rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %} " rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %} " rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %} " rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/main.css' %} " rel="stylesheet">
+  <style media="screen">
+  .header {
+background: rgba(0,0,0,0.6);
+padding: 10px 0;
+}
+.fixed-top {
+position: relative;
+}
+.fixed-top1 {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+background: rgba(0,0,0,0.5);
+padding: 12px !important;
+}
+    .heading{
+      text-align:center;
+    }
+    .heading h6{
+      font-size: 80%;
+    }
+    input{
+      margin-left: 1rem;
+margin-right: 1rem;
+    }
+    input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dotted #000000;
+}
+input[type=email] {
+background: transparent;
+border: none;
+border-bottom: 1px dotted #000000;
+}
+input[type=tel] {
+background: transparent;
+border: none;
+border-bottom: 1px dotted #000000;
+}
+  .checkbox input[type=checkbox]{
+    float:right;
+
+  }
+  .sign{
+    float:right;
+  }
+  .cta-btn {
+font-family: var(--font-default);
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 12px 40px;
+border-radius: 50px;
+transition: 0.5s;
+margin: 10px;
+color: #fff;
+background: #000;
+}
+.alert{
+  background-color: #000;
+color: var(--color-primary);
+border: 2px solid var(--color-primary);
+text-align: center;
+}
+
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Nova - v1.1.0
+  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="page-index">
+  <!-- ======= Header ======= -->
+  <header id="header" class="">
+    <img style="width:100%;" src="{% static 'img/rotary1.jpg'%}" alt="">
+  </header>
+  <header id="header" class="header header1 d-flex align-items-center fixed-top">
+
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="{% url 'home'%} " class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="{% url 'home'%}" class="active">Home</a></li>
+            <li class="dropdown"><a href="#"><span>About Organ Donation</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="{% url 'organ_donation'%}">Organ Donation</a></li>
+                <li><a href="{% url 'organ_transplantation'%}">Organ Transplantation</a></li>
+                <li><a href="{% url 'organ_donation_in_india'%}">Organ Donation In India</a></li>
+                <li><a href="{% url 'why_donate'%}">Why Donate</a></li>
+                <li><a href="{% url 'living_donation'%}">Living Donation</a></li>
+                <li><a href="{% url 'how_to_become_a_donor'%}">How To Become A Donor</a></li>
+                <li><a href="{% url 'myths_vs_facts'%}">Myths Vs Facts</a></li>
+                <li><a href="{% url 'awareness_lightening_up_light'%}">Aareness/Lightening Up Light</a></li>
+                <li><a href="{% url 'tho_act'%}">THO Act</a></li>
+                <li><a href="{% url 'all_religion_support_organ_donation'%}">All Religion Supports Organ Donation</a></li>
+              </ul>
+            </li>
+            <li><a href="{% url 'about_rotary'%}">About Rotary</a></li>
+            <li><a href="{% url 'our_inspirations'%}">Our Inspirations</a></li>
+            <li><a href="{% url 'faqs'%}">FAQs</a></li>
+            <li><a href="{% url 'news'%}">News</a></li>
+            <li><a href="{% url 'events'%}">Events</a></li>
+
+
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="{% url 'pledge_now'%}">Pledge Now</a></li>
+            <li><a href="{% url 'login'%}">Donor Card</a></li>
+
+          </ul>
+        </nav><!-- .navbar -->
+
+      </div>
+
+  </header><!-- End Header -->
+<main id="main">
+  {% if messages %}
+
+          {% for message in messages %}
+          <div class="alert alert-info">
+              {{ message }}
+          </div>
+          {% endfor %}
+
+      {% endif %}
+
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article style="height:auto" class="blog-details">
+            <div class="heading">
+              <h6><b>FORM 7</b></h6>
+              <h6>FOR ORGAN OR TISSUE PLEDGING</h6>
+              <h6><b><i>(To be filled by individual of age 18 year or above)</i></b></h6>
+              <h6><i>[Refer rule 5(4)(a)]</i></h6>
+              <h6>ORGAN(S) AND TISSUE(S) DONOR FORM</h6>
+              <h6><b><i>(To be filled in triplicate)</i></b></h6>
+            </div>
+            <br>
+
+
+            <div class="content">
+              <form class="" action="" method="post" enctype="multipart/form-data">
+                <b><label style="font-size:90%" for="">Registration Number (To be allotted by Organ Donor Registry)</label></b>
+                <input type="text" name="reg_number" value="" ><br>
+                <label for="">I, </label><input type="text" name="name" value="" required>
+                <label for="">aged </label><input type="text" name="age" value="" required>
+                <label for="">and date of birth</label><input type="date" name="dob" value="" required>
+                <label for="">resident of </label><input type="text" name="resident" value="" required>
+                <label for="">in the presence of persons mentioned below hereby unequivocally authorise the removal of following organ(s) and/or tissue(s), from my body after being declared brain stem dead by the board of medical experts and consent to donate the same for therapeutic purposes.</label>
+                <br><br><br>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Please tick as applicable</label>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">(Following tissues can also be donated after brain stem death as well as cardiac death)</label>
+                  </div>
+                </div>
+
+                <div class="row checkbox" >
+                  <div class="col-md-4">
+                    <label for="">Heart</label><input type="checkbox" name="heart" value="True"><br>
+                    <label for="">Lungs</label><input type="checkbox" name="lungs" value="True"><br>
+                    <label for="">Kidneys</label><input type="checkbox" name="kidneys" value="True"><br>
+                    <label for="">Liver</label><input type="checkbox" name="liver" value="True"><br>
+                    <label for="">Pancreas</label><input type="checkbox" name="pancreas" value="True"><br>
+                    <label for="">Any Other Organ (Pl. specify)</label><input type="text" name="any_other_organ" value=""><br>
+                    <label for="">All Organs</label><input type="checkbox" name="all_organs" value="True"><br>
+
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-4">
+                    <label for="">Corneas/Eye Balls</label><input type="checkbox" name="corneas_or_eye_balls" value="True"><br>
+                    <label for="">Skin</label><input type="checkbox" name="skin" value="True"><br>
+                    <label for="">Bones</label><input type="checkbox" name="bones" value="True"><br>
+                    <label for="">Heart Valves</label><input type="checkbox" name="heart_valves" value="True"><br>
+                    <label for="">Blood Vessels</label><input type="checkbox" name="blood_vessels" value="True"><br>
+                    <label for="">Any other Tissue (Pl. specify)</label><input type="text" name="any_other_tissue" value=""><br>
+                    <label for="">All Tissues</label><input type="checkbox" name="all_tissues" value="True"><br>
+                  </div>
+                </div>
+                <br>
+
+                <label for="">My blood group is (if known)</label><input type="text" name="blood_group" value=""><br>
+                <label for="">Gender</label><input type="text" name="gender" value="" required><br><br>
+
+                <div class="sign">
+                  <label for="">Signature of Pledger</label><input type="file" name="sign" value="" required><br>
+                  <label for="">Address for correspondence</label><input type="text" name="address" value="" required><br>
+                  <label for="">Telephone No</label><input pattern="[1-9]{1}[0-9]{9}" type="tel" name="tel_no" value="" required><br>
+                  <label for="">Email</label><input type="email" name="email" value="" maxlength="25" required><br>
+                  <label for="">Dated</label><input type="date" name="date" value="" required><br>
+                </div>
+
+
+                <label style="margin-top:2rem" for="">(<b>Note:</b> In case of online registration of pledge, one copy of the pledge will be retained by pledger, one by the institution where pledge is made
+and a hard copy signed by pledger and two witnesses shall be sent to the nodal networking organisation.)</label><br><br>
+                <label for="">(Signature of Witness 1)</label><input type="file" name="witness1_sign" value="" required><br>
+                <label for="">1. Mr/Ms,</label><input type="text" name="witness1_name" value="" required>
+                <label for="">aged</label><input type="text" name="witness1_age" value="" required>
+                <label for="">and date of birth</label><input type="date" name="witness1_dob" value="" required>
+                <label for="">resident of </label><input type="text" name="witness1_resident" value="" required>
+                <label for="">Telephone No </label><input pattern="[1-9]{1}[0-9]{9}" type="tel" name="witness1_tel_no" value="" required>
+                <label for="">Email </label><input type="text" name="witness1_email" value="" required>
+                <label for="">is a near relative to the donor as</label><input type="text" name="witness1_relation" value="" required>
+                <br><br>
+                <label for="">(Signature of Witness 2)</label><input type="file" name="witness2_sign" value="" required><br>
+                <label for="">2. Mr/Ms,</label><input type="text" name="witness2_name" value="" required>
+                <label for="">aged</label><input type="text" name="witness2_age" value="" required>
+                <label for="">and date of birth</label><input type="date" name="witness2_dob" value="" required>
+                <label for="">resident of </label><input type="text" name="witness2_resident" value="" required>
+                <label for="">Telephone No </label><input pattern="[1-9]{1}[0-9]{9}" type="tel" name="witness2_tel_no" value="" required>
+                <label for="">Email </label><input type="email" name="witness2_email" value="" required>
+                <label for="">is a near relative to the donor as</label><input type="text" name="witness2_relation" value="" required>
+                <br><br>
+                <label for="">Dated </label><input type="date" name="witness_dated" value="" required><br>
+                <label for="">Place </label><input type="text" name="witness_place" value="" required>
+<br><br>
+<label style="margin-top:2rem" for=""><b>Note:</b></label>
+<label for="">(i) Organ donation is a family decision. Therefore, it is important that you discuss your decision with family members and loved ones so that it will be easier for them to follow through with your wishes.</label>
+<label for="">(ii) One copy of the pledge form/pledge card to be with respective networking organisation, one copy to be retained by institution where the pledge is made and one copy to be handed over to the pledger.</label>
+<label for="">(iii) The person making the pledge has the option to withdraw the pledge.</label>
+<br><br>
+<center>
+<button class="cta-btn" type="submit" name="submit">Submit</button>
+</center>
+              </form>
+
+
+
+    </div>
+    </article>
+  </section>
+
+
+
+</main><!-- End #main -->
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+<script src="{% static 'vendor/aos/aos.js' %} "></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %} "></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %} "></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %} "></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'js/main.js' %} "></script>
+</body>
+</html>

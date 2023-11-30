@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<title></title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			margin-bottom:1.5rem;
+		}
+
+
+		@media (max-width:720px) {
+
+		}
+	</style>
+</head>
+<body style="background-color: #fff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+<p>Dear <b>{{name}}</b>, </p>
+<p>Congratulations on successfully registering yourself as an organ donor!</p>
+<p>Your pledge number is: <b>{{auth_token}}</b></p>
+
+<p>We thank you and applaud you on making a commitment to save lives. And we hope you encourage others to follow your footsteps.</p><br>
+<p>Team <br>Rotary Organ Donation </p>
+
+</body>
+</html>

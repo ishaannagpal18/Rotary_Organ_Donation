@@ -1,0 +1,353 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Rotary Organ Donation
+{% endblock %}
+
+{% block style %}
+
+<style media="screen">
+  .alert{
+    background-color: rgba(0,0,0,0.5);
+color: var(--color-primary);
+border: 2px solid var(--color-primary);
+text-align: center;
+  }
+</style>
+{% endblock %}
+
+
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    {% if messages %}
+
+            {% for message in messages %}
+            <div class="alert alert-info">
+                {{ message }}
+            </div>
+            {% endfor %}
+
+        {% endif %}
+    <div class="row">
+      <div class="col-xl-4">
+        <h2 data-aos="fade-up">Rotary Organ Donation</h2>
+        <blockquote data-aos="fade-up" data-aos-delay="100">
+          <p>Rotary Organ Donation is an independent online platform to further the cause of cadaver organ donation in India through educating the public about the importance of organ donation. Our aim is to educate the importance of organ donation and its approach to save 8 other lives to everyone from any caste or creed. Our vision is to build a nationally coordinated approach to educate and collect information about organ and tissue donation for transplantation in India. </p>
+        </blockquote>
+        <!-- <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero Section -->
+
+<main id="main">
+
+  <!-- ======= Why Choose Us Section ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>About Organ Donation</h2>
+
+      </div>
+
+      <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-xl-5 img-bg" style="background-image: url('/static/img/27-2.jpg')"></div>
+        <div class="col-xl-7 slides  position-relative">
+
+          <div class="slides-1 swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Organ Donation</h3>
+                  <h4 class="mb-3">The process of Organ Donation comprises of transplanting healthy organs and tissues from one person to the other by the procedure of transplantation to restore the normal functioning of the body.</h4>
+                  <p>In India, each year about thousands of people die waiting for a suitable donor for transplant. By donating organs we give a second chance at life to those who are dying or leading a difficult life because of organ failure. To understand organ donation and finding a reason to donate let us understand that how humans die and how and in what circumstances we can be a donor.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Organ Transplantation</h3>
+                  <h4 class="mb-3">Organ Transplantation is a surgical procedure that involves the transplant of a healthy organ from a live/deceased donor into the body of the recipient (person with unhealthy organ/tissue).</h4>
+                  <p>The process consist of a dedicated criteria which ranges from the maintenance of waiting list of donors, finding a suitable donor and then arranging the transplant procedure. At Rotary Organ Donation Foundation we assess individual needs related to transplantation and then we provide information to help you discover your suitable donor.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Organ Donation in India</h3>
+                  <h4 class="mb-3">In Asia, India started its first Kidney transplant program in 1970’s. The success of the programme was remarkable but it came along with various controversies like “Kidney trade scandals” in the last two decades that made a bad impression where people found engaged in illegal commerce of organs for personal profits.</h4>
+                  <p>Despite of so many difficulties and allegations there were some Non Governmental Organisations, who were dedicatedly engaged in the promotion and conduction of organ transplant for the people who were genuinely seeking organs to live.  </p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">Why Donate</h3>
+                  <h4 class="mb-3">You will be surprised to know that an individual has the capacity to save upto 8 lives and can help up to 50 people through tissue and organ donation, and can improve the living conditions of many through tissue donation.</h4>
+                  <p>Its a boon to the mankind that Science have now given us the privilege to save the life of those people who die because of organ failure. With the procedure of transplantation it is now possible to save such lives. But the problem lies with the availability of suitable donors.</p>
+                </div>
+              </div><!-- End slide item -->
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <h3 class="mb-3">How to Become a Donor</h3>
+                  <h4 class="mb-3">Organ Donation is a legal process in India with no interference. The Indian government enacted the Transplantation of Human Organs Act (THOA), 1994, which allows organ donation.</h4>
+                  <p>It also legalized the concept of ‘brain death‘ which is a condition of irreversible and complete cessation of all brain functions. In such situation the person is kept on artificial support to fulfill the oxygen requirement of vital organs in the body and in that case, the patient’s organ can be transplanted to terminally ill patients.</p>
+                </div>
+              </div><!-- End slide item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Why Choose Us Section -->
+
+  <!-- ======= Our Services Section ======= -->
+  <section id="services-list" class="services-list">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Important Links</h2>
+
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'pledge_now'%}" class="stretched-link">Register
+Your Decision</a></h4>
+            <p class="description">Record your decision on the register and be ensured that your decision will be known.</p>
+          </div>
+        </div>
+        <!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'organ_donation'%}" class="stretched-link">Inform and discuss with
+your family & dear ones</a></h4>
+            <p class="description">Help your family and friends understand and remember your decision</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'donor_card'%}" class="stretched-link">Always carry your donor card</a></h4>
+            <p class="description">Always carry an Organ Donor Card in your wallet. It is important for your family to be aware of your wishes as WITHOUT their consent your organs / tissue cannot be donated.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'myths_vs_facts'%}" class="stretched-link">Myths vs Facts</a></h4>
+            <p class="description">Spreading the truth about organ donation is an important step in raising awareness</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'pledge_now'%}" class="stretched-link">Be A Volunteer</a></h4>
+            <p class="description">You can change someone's life. Give someone a second chance. <br>Be a donor, Be a hero.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+          <div>
+            <h4 class="title"><a href="{% url 'faqs'%}" class="stretched-link">FAQs</a></h4>
+            <p class="description">You'll find answers to the questions we get asked the most about organ donation.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+  </section><!-- End Our Services Section -->
+
+
+
+  <!-- ======= Features Section ======= -->
+  <section id="features" class="features">
+
+    <!-- <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <h3>Powerful Features for <br>Your Business</h3>
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                <span>Easy Cart Features</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                <span>Sit amet consectetur adipisicing</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                <span>Ipsum Rerum Explicabo</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                <span>Easy Cart Features</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                <span>Easy Cart Features</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                <span>Sit amet consectetur adipisicing</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+                <span>Ipsum Rerum Explicabo</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="icon-list d-flex">
+                <i class="ri-base-station-line" style="color: #ff5828;"></i>
+                <span>Easy Cart Features</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="phone-wrap">
+            <img src="{% static 'img/iphone.png'%} " alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+
+    <div class="details">
+      <div class="container" data-aos="fade-up" data-aos-delay="300">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>BE HONEST TO YOUR LIFE</h4>
+            <p>I joined Rotary in 2008, and it was only in my 7th year of membership that I got the opportunity to learn about the subject of organ donation. I was made aware of how there is a large lack of organ donors due to which many patients awaiting organ/tissue donations lose their lives. I couldn’t bare such a devoid, therefore, Rotary Club of Delhi South West RID 3011 and I took up this cause, and am working very hard, along with my fellow Rotarians, every day to pursue it as far as we can. And I would require each and every individual’s effort to further this initiative so that one day, donees throughout India do not have to lose their lives waiting for organs / tissues.</p>
+            <div style="text-align:right;" class="">
+              <b>Rotary Regards</b>  <br>Rtn Sanjeev Verma
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'img/sanjeev_verma.jpg'%}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End Features Section -->
+
+  <!-- ======= Recent Blog Posts Section ======= -->
+  <!-- <section id="recent-posts" class="recent-posts">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Recent Blog Posts</h2>
+
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-1.jpg'%} " class="img-fluid" alt=""></div>
+            <div class="meta">
+              <span class="post-date">Tue, December 12</span>
+              <span class="post-author"> / Julia Parker</span>
+            </div>
+            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-2.jpg'%}" class="img-fluid" alt=""></div>
+            <div class="meta">
+              <span class="post-date">Fri, September 05</span>
+              <span class="post-author"> / Mario Douglas</span>
+            </div>
+            <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+            <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis doloribus...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-3.jpg'%}" class="img-fluid" alt=""></div>
+            <div class="meta">
+              <span class="post-date">Tue, July 27</span>
+              <span class="post-author"> / Lisa Hunter</span>
+            </div>
+            <h3 class="post-title">Quia assumenda est et veritati</h3>
+            <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-4.jpg'%}" class="img-fluid" alt=""></div>
+            <div class="meta">
+              <span class="post-date">Tue, Sep 16</span>
+              <span class="post-author"> / Mario Douglas</span>
+            </div>
+            <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
+            <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum quia eligendi...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+
+</main><!-- End #main -->
+{% endblock %}

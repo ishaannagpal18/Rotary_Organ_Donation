@@ -1,0 +1,290 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+FAQs
+{% endblock %}
+{% block style %}
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+   * {
+  	 box-sizing: border-box;
+  }
+   *::before, *::after {
+  	 box-sizing: border-box;
+  }
+   #faqs {
+  	 margin: 0;
+  	 padding: 0;
+  	 font-family: 'Hind', sans-serif;
+  	 background: #fff;
+  	 color: #4d5974;
+  	 display: flex;
+  	 margin: 3rem 0;
+  }
+   .container {
+  	 margin: 0 auto;
+  	 padding: 4rem;
+  }
+   .accordion .accordion-item {
+  	 border-bottom: 1px solid #e5e5e5;
+  }
+   .accordion .accordion-item button[aria-expanded='true'] {
+  	 border-bottom: 1px solid var(--color-primary);
+  }
+   .accordion button {
+  	 position: relative;
+  	 display: block;
+  	 text-align: left;
+  	 width: 100%;
+  	 padding: 1em 1em;
+  	 color: color: var(--color-primary);;
+  	 font-size: 1.15rem;
+  	 font-weight: 400;
+  	 border: none;
+  	 background: none;
+  	 outline: none;
+  }
+   .accordion button:hover, .accordion button:focus {
+  	 cursor: pointer;
+  	 color: var(--color-primary);
+  }
+   .accordion button:hover::after, .accordion button:focus::after {
+  	 cursor: pointer;
+  	 color: var(--color-primary);
+  	 border: 1px solid var(--color-primary);
+  }
+   .accordion button .accordion-title {
+  	 padding: 1em 1.5em 1em 0;
+  }
+   .accordion button .icon {
+  	 display: inline-block;
+  	 position: absolute;
+  	 top: 18px;
+  	 right: 10px;
+  	 width: 22px;
+  	 height: 22px;
+  	 border: 1px solid;
+  	 border-radius: 22px;
+  }
+   .accordion button .icon::before {
+  	 display: block;
+  	 position: absolute;
+  	 content: '';
+  	 top: 9px;
+  	 left: 5px;
+  	 width: 10px;
+  	 height: 2px;
+  	 background: currentColor;
+  }
+   .accordion button .icon::after {
+  	 display: block;
+  	 position: absolute;
+  	 content: '';
+  	 top: 5px;
+  	 left: 9px;
+  	 width: 2px;
+  	 height: 10px;
+  	 background: currentColor;
+  }
+   .accordion button[aria-expanded='true'] {
+  	 color: var(--color-primary);
+  }
+   .accordion button[aria-expanded='true'] .icon::after {
+  	 width: 0;
+  }
+   .accordion button[aria-expanded='true'] + .accordion-content {
+  	 opacity: 1;
+  	 max-height: 30em;
+  	 transition: all 200ms linear;
+  	 will-change: opacity, max-height;
+  }
+   .accordion .accordion-content {
+  	 opacity: 0;
+  	 max-height: 0;
+  	 overflow: hidden;
+  	 transition: opacity 200ms linear, max-height 200ms linear;
+  	 will-change: opacity, max-height;
+  }
+   .accordion .accordion-content p {
+  	 font-size: 1rem;
+  	 font-weight: 300;
+  	 margin: 2em 1em;
+  }
+  @media (max-width: 1280px) {
+    .container {
+   	 padding: 1rem;
+   }
+   .accordion button {
+     padding: 1em 2em 1em 1em;
+   }
+  }
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>FAQs</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>FAQs</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <section  id="faqs">
+    <div style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  " class="container">
+    <h2 style="font-weight: 700;
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 2rem;">Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Will the identity of the recipients be revealed to the donor family?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No, the identity of both the donor and recipient must remain confidential by law. Basic information is provided to both recipients and donor families after the transplant. If they wish to communicate, it is done anonymously through the recovery program and transplant center. Some families opt to meet, but both parties have to be in agreement to this</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Will organ and tissue donation change the appearance of my body?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No, donation does not disfigure the body or interfere with funeral arrangements. It is still possible to have an open casket funeral.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can I donate organs to a friend or loved one awaiting a transplant?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>National organ allocation guidelines allow families of donors to designate recipients, usually family members or friends. Directed or designated donation as it is commonly called, is an option.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What will happen to my donated organs and tissues?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>At the time of event or live donation, your donated organs would be kept in ventilated solution in your city hospital. Once the matchmaking process from our side is done, which usually takes a day or two, we will inform donee that, organs for transplantation is available. Our facilitator hospital will then process the transplantation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do I discuss organ and tissue donation with my family?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Many people are uncomfortable talking about death. Explain to your loved ones how your decision to donate at the time of your death will offer hope to others whose lives can be saved or enhanced through transplantation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I change my mind after I've registered to be a donor?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes. Inform your consent partners and family that you have changed your mind. If you need to make changes to your information or you decide you do not want to become an organ, tissue and eye donor and you want your name taken off the Donate Life Registry.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title"> Will the medical or nursing care be changed because of my decision to be a donor?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No. The quality of you care will not change, regardless of your decision. Organ and tissue recovery takes place after all efforts to save your life have been exhausted and death has been declared. The doctors involved in saving your life are entirely different from the medical team involved in recovering organs and tissues.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title"> What is living donation and can I donate a kidney or other organs while I'm alive?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>It is becoming more common to donate organs and partial organs while living. Kidneys are the most common organs donated by living donors. Other organs that can be donated include a lobe of a lung, partial liver, pancreas or intestine.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How is brain death determined?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Doctors examining the patient will conduct a battery of tests to determine whether any brain activity is present. If all brain activity is absent, the patient is dead. Link for more information on brain death.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What is meant by brain death?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Brain death occurs in patients who have suffered a severe injury to the brain as a result of trauma or some other medical cause. As a result of the injury the brain swells and obstructs it's own blood supply. Without blood flow, all brain tissue dies. Artificial support systems may maintain functions such as heartbeat and breathing for a few days, but not permanently. Brain death is an established medical and legal diagnosis of death. Brain death is the most common circumstance under which patients donate organs, because while they have been declared dead the mechanical support has maintained blood flow to the organs. This occurs only in the hospital, typically in an intensive care setting.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title"> Does my religion approve of donation?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>All of the major religions in this country approve of organ and tissue donation and consider it a gift &#8211; an act of charity. If you have questions, contact your religious adviser. See Religion and Organ Donation page for more details.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do I become a donor?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>There are a few different steps you can take. First, register your wish with us by filling up a form here in website. Next, inform your family and others close to you that you've made the decision to be donor. At the time of death, the family or next of kin will be consulted about organ donation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What organs and tissues can I donate?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>It is possible to donate as many as 25 different organs and tissues. Organs that can be donated for transplantation include kidneys, heart, lungs, liver, small bowel and pancreas. Tissues that can be donated include eyes, heart valves, bone, skin, veins and tendons.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Who can become a donor?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Virtually anyone can become a donor. Your medical condition at the time of death will determine what organs and tissues can be donated can be donated for transplant or scientific research.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Is there a need for organ and tissue donors?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes! Nearly 500,000 people die because of non-availability of organs, 200,000 people die of liver disease, 50,000 people die from heart disease, 150,000 people await a kidney transplant but only 5,000 get one, 1,000,000 lakh people suffer from corneal blindness and await transplant.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How long do organs last before they must be transplanted?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Not very long. Hearts and lungs are particularly sensitive to being without a blood supply and must be transplanted within four to six hours of retrieval. In the interim, the organs are stored at 4 ° C (yes, in an ice-filled esky) to help with their preservation. The liver and pancreas must be transplanted within 12 hours and the kidneys within 24 hours of retrieval.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How long do tissues last before they must be transplanted?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Tissues undergo extensive screening and processing before being released for use. Tissue transplantation may not be life-saving but, it dramatically improves and enhances the quality of lives. For example, a person who is blind will not die without a corneal transplant but their life can be dramatically improved with the gift of sight.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Does organ / tissue removal affect cremation / burial arrangements or disfigure the body?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No.  The removal or organs or tissues will not interfere with customary funeral or burial arrangements.  The appearance of the body is not altered.  A highly skilled surgical transplant team removes the organs and tissues which can be transplanted in other patients.  Surgeons stitch up the body carefully, hence no disfigurement occurs.  The body can be viewed as in any case of death and funeral arrangements need not be delayed.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is living related donors?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Only immediate blood relations (brother, sister, parents & children) can donate as per the Transplantation of Human Organ Act 1994. Living donor can donate only few organs, one kidney (as one kidney is capable of maintaining the body functions), a portion of pancreas (as half of the pancreas is adequate for sustaining pancreatic functions) and part of the liver (as the few segments that are donated will regenerate after a period of time) can be donated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+</main><!-- End #main -->
+
+{% endblock %}
+
+{% block js %}
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+{% endblock %}

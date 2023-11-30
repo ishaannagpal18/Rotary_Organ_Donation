@@ -1,0 +1,157 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Organ Donation
+{% endblock %}
+{% block style %}
+<style media="screen">
+  section{
+    padding:2rem 0;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>Organ Donation</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>Organ Donation</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4" data-aos="fade-up">
+        <div class="col-lg-4">
+          <img src="{% static 'img/1.jpg'%} " class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="content ps-lg-5">
+            <h3>Organ Donation</h3>
+            <p>
+              The process of Organ Donation comprises of transplanting healthy organs and tissues from one person to the other by the procedure of transplantation to restore the normal functioning of the body.
+            </p>
+            <p>In India, each year about thousands of people die waiting for a suitable donor for transplant. By donating organs we give a second chance at life to those who are dying or leading a difficult life because of organ failure. To understand organ donation and finding a reason to donate let us understand that how humans die and how and in what circumstances we can be a donor.</p>
+            <p>It is not only organ but a person can donate their tissues also. On the basis of this diversification we can describe this under two categories:</p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Organ Donation post Brain Death</li>
+              <li><i class="bi bi-check-circle-fill"></i> Organ and Tissue Donation post Cardiac Death</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+            <h2 class="title">Organ Donation – Post Brain death</h2>
+            <div class="content">
+            <div class="row">
+              <div class="col-md-6">
+                  <img src="{% static 'img/2.jpeg'%} " alt="" class="img-fluid">
+
+              </div>
+              <div class="col-md-6">
+
+                <p>
+                  Donation post Brain Death is only possible when a person dies and all the attempts to save his/her life have been conducted and completed. This is the stage where, analysation through tests is carried out to confirm the absence of brain or brain stem activity only after which the patient is declared as brain dead. Once the patient is declared as Brain dead, then only any organ donation is possible.
+                </p>
+                <p>
+                  The organs that can be transplanted are:
+                  <ul>
+                    <li>Heart</li>
+                    <li>Eyes</li>
+                    <li>Kidneys</li>
+                    <li>Liver</li>
+                    <li>Lungs</li>
+                    <li>Pancreas</li>
+                    <li>Intestine</li>
+                  </ul>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+
+
+
+            <h2 class="title">Organ and Tissue Donation- Post Cardiac death</h2>
+
+
+            <div class="content">
+              <blockquote>
+                <p>Cardiac Death or Cardiac arrest is a condition of cessation of functional circulation of blood (blood flowing from heart) due to inability of the heart to contract effectively.</p>
+              </blockquote>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <!-- <div class="content"> -->
+
+                <p>
+                  Tissue Donation post cardiac death can be done within 24 hours of death (in some cases upto 48 hours). Since most tissues do not require a constant blood supply to be successfully transplanted, they can be stored up to 5 years before being transplanted (except cornea).
+                </p>
+                <p>
+                  The tissues that can be transplanted are:
+                  <ul>
+                    <li>Heart valves</li>
+                    <li>Bone</li>
+                    <li>Veins</li>
+                    <li>Cornea (can’t be stored)</li>
+                    <li>Middle ear</li>
+                    <li>Skin</li>
+                    <li>Cartilage</li>
+                    <li>Tendons</li>
+                    <li>Ligaments</li>
+                  </ul>
+                </p>
+              <!-- </div> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <div class="post-img"> -->
+                <img src="{% static 'img/3.jpg'%} " alt="" class="img-fluid">
+              <!-- </div> -->
+            </div>
+
+        </div>
+        <p>It is found that in some cases, where a person has undergone any un-treatable brain injury, still some minor brain stem activity is found intact. In such cases, if the patient is found a registered donor or his/her family makes a decision to donate then in that scenario, organ donation post cardiac death is possible. Such type of donation is known as <b>“non-heart beating donation”</b> .</p>
+        <p>Please note that non-heart beating donation option is only opened to the family after the medical team declares the failure of brain injury treatment.</p>
+        <p>With this type of donation the rate of transplantation has been increased to 25% from past few years. It is really an advancement in the field to be noted.</p>
+
+    </div>
+  </section><!-- End Blog Details Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}

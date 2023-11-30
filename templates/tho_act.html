@@ -1,0 +1,60 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+THO Act
+{% endblock %}
+{% block style %}
+<style media="screen">
+  section{
+    padding:2rem 0;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>THO Act</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>THO Act</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4" data-aos="fade-up">
+        <div class="col-lg-4">
+          <img src="{% static 'img/13.jpg'%} " class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="content ps-lg-5">
+            <h3>THO Act</h3>
+            <p>
+              ACT AND RULES UNDER TRANSPLANT OF HUMAN ORGANS ACT (THOA)
+            </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i><a target="_blank" href="{% static 'img/pdf/THOA-Rules-2014.pdf'%}">Transplantation of Human Organs and Tissues Rules, 2014</a> </li>
+              <li><i class="bi bi-check-circle-fill"></i> <a target="_blank" href="{% static 'img/pdf/THOA-amendment-2011.pdf'%}">THOA amendment 2011</a> </li>
+              <li><i class="bi bi-check-circle-fill"></i> <a target="_blank" href="{% static 'img/pdf/Transplantation-Of-Human-Organs-(Amendment)-Rules-2008.pdf'%}">Transplantation Of Human Organs(Amendment)Rules,2008</a> </li>
+              <li><i class="bi bi-check-circle-fill"></i> <a target="_blank" href="{% static 'img/pdf/THO-Rules-1995-(Original-Rules).pdf'%}">THO Rules, 1995 (Original Rules)</a> </li>
+              <li><i class="bi bi-check-circle-fill"></i> <a target="_blank" href="{% static 'img/pdf/THOA-ACT-1994.pdf'%}">THOA 1994</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}

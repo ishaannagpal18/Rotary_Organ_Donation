@@ -1,0 +1,184 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Organ Donation In India
+{% endblock %}
+{% block style %}
+<style media="screen">
+  section{
+    padding:2rem 0;
+  }
+  table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>Organ Donation In India</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>Organ Donation In India</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+
+
+
+            <h2 class="title">Organ Donation in India</h2>
+
+
+            <div class="content">
+              <blockquote>
+                <p>In Asia, India started its first Kidney transplant program in 1970’s. The success of the programme was remarkable but it came along with various controversies like “Kidney trade scandals” in the last two decades that made a bad impression where people found engaged in illegal commerce of organs for personal profits.</p>
+              </blockquote>
+
+            <div class="row">
+              <div class="col-md-6">
+                <!-- <div class="post-img"> -->
+                  <img src="{% static 'img/6.jpg'%} " alt="" class="img-fluid">
+                <!-- </div> -->
+              </div>
+
+              <div class="col-md-6">
+                <!-- <div class="content"> -->
+
+                <p>
+                  Despite of so many difficulties and allegations there were some Non Governmental Organisations, who were dedicatedly engaged in the promotion and conduction of organ transplant for the people who were genuinely seeking organs to live. This is when the legislation drew its attention towards the topic and thereafter, passed the <b>Transplantation of Human Organ Act (THO) in 1994</b> which states that it is enacted to “provide for the regulation of removal, storage, and transplantation of human organs for therapeutic purposes and for the prevention of commercial dealings in human organs”.
+                </p>
+                <p>Though the act was passed in 1994 in the country, but there were some states where its implementation was not adopted till 2003 (Bihar). With this example, it is proven, what the importance of such act in the country is. Once a state pass the act, it needs to establish two regulatory bodies. One, the Appropriate Authority (AA) for licensing hospitals to conduct transplant operations, and the other Authorization Committee (AC) to “prevent” commercial transactions between donors and recipients. The law has designed a separate form for each section of the act.</p>
+
+              <!-- </div> -->
+            </div>
+
+
+        </div>
+        <p>Here is the list of states with their effective adoption date of the THO Act</p>
+      <table style="width:100%;">
+        <th>NAME OF THE STATE</th>
+        <th>EFFECTIVE DATE OF ADOPTION</th>
+        <tr>
+          <td>GOA</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>HIMACHAL PRADESH</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>KERALA</td>
+          <td>08.08.95</td>
+        </tr>
+        <tr>
+          <td>KARNATAKA</td>
+          <td>04.04.95</td>
+        </tr>
+        <tr>
+          <td>MAHARASHTRA</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>NAGALAND</td>
+          <td>05.12.95</td>
+        </tr>
+        <tr>
+          <td>RAJASTHAN</td>
+          <td>15.02.96</td>
+        </tr>
+        <tr>
+          <td>TAMIL NADU</td>
+          <td>05.05.95</td>
+        </tr>
+        <tr>
+          <td>WEST BENGAL</td>
+          <td>11.08.95</td>
+        </tr>
+        <tr>
+          <td>HARYANA</td>
+          <td>01.03.95</td>
+        </tr>
+        <tr>
+          <td>MEGHALAYA</td>
+          <td>04.09.96</td>
+        </tr>
+        <tr>
+          <td>PUNJAB</td>
+          <td>17.09.96</td>
+        </tr>
+        <tr>
+          <td>GUJARAT</td>
+          <td>01.07.97</td>
+        </tr>
+        <tr>
+          <td>ANDHRA PRADESH</td>
+          <td>02.03.95</td>
+        </tr>
+        <tr>
+          <td>MADHYA PRADESH</td>
+          <td>24.01.97</td>
+        </tr>
+        <tr>
+          <td>SIKKIM</td>
+          <td>25.03.97</td>
+        </tr>
+        <tr>
+          <td>JAMMU & KASHMIR</td>
+          <td>04.04.97</td>
+        </tr>
+        <tr>
+          <td>ARUNACHAL PRADESH</td>
+          <td>04.03.98</td>
+        </tr>
+        <tr>
+          <td>ORRISSA</td>
+          <td>04.08.98</td>
+        </tr>
+        <tr>
+          <td>UTTAR PRADESH</td>
+          <td>02.06.98</td>
+        </tr>
+        <tr>
+          <td>DELHI</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>LAKSHADWEEP</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>PONDICHERRY</td>
+          <td>04.02.95</td>
+        </tr>
+        <tr>
+          <td>ASSAM</td>
+          <td>22.03.96</td>
+        </tr>
+      </table>
+      <br><br>
+      <p>(Late Sh. Vilasrao Deshmukh, former Maharashtra CM and Indian Science minister may have survived, if he had a liver transplant) Says head of the Chennai hospital where he was treated. It is observed that, if adopted properly the country can reach a highest advancement in the field of Organ Donation and Transplantation. India can contribute a lot because of its capacity, ability, and expertise technology and hospital infrastructure to support the programme.</p>
+
+    </div>
+  </section><!-- End Blog Details Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}

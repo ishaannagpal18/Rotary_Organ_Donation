@@ -1,0 +1,162 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+About Rotary
+{% endblock %}
+{% block style %}
+<style media="screen">
+  section{
+    padding:2rem 0;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>About Rotary</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>About Rotary</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+            <h2 class="title">About Rotary</h2>
+            <div class="content">
+
+                <blockquote>
+                  We are 1.4 million neighbors, friends, and community leaders who come together to create positive, lasting change in our communities and around the world.
+                </blockquote>
+                <p>Our differing occupations, cultures, and countries give us a unique perspective. Our shared passion for service helps us accomplish the remarkable.</p>
+
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+          <article class="blog-details">
+            <h2 class="title">What Makes Us Different?</h2>
+            <div class="content">
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <!-- <div class="content"> -->
+
+                <p>
+                  Our distinct point of view and approach gives us unique advantages:
+                </p>
+                <p>
+                  <li>We see differently: Our multidisciplinary perspective helps us see challenges in unique ways.</li>
+                  <li>We think differently: We apply leadership and expertise to social issues—and find unique solutions.</li>
+                  <li>Medical urgency of the patient’s illness</li>
+                  <li>We act responsibly: Our passion and perseverance create lasting change.</li>
+                  <li>We make a difference at home and around the world: Our members can be found in your community and across the globe.</li>
+                  <ul>
+
+                  </ul>
+                </p>
+              <!-- </div> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <div class="post-img"> -->
+                <img src="{% static 'img/21.png'%} " alt="" class="img-fluid">
+              <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+  </section><!-- End Blog Details Section -->
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-5">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">How Do We Work?</h2>
+            <div class="content">
+              <p>Our impact starts with our members—people who work tirelessly with their clubs to solve some of our communities’ toughest challenges. Their efforts are supported by Rotary International, our member association, and The Rotary Foundation, which turns generous donations into grants that fund the work of our members and partners around the world. Rotary is led by our members—responsible leaders who help to carry forward our organization’s mission and values in their elected roles.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-5">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">How Did We Get Here?</h2>
+            <div class="content">
+              <p>We’ve been making history and bringing our world closer together for over 100 years. Since forming in 1905, we’ve taken on some of the world’s toughest challenges and helped a wide range of international and service organizations—from the UN to Easter Seals—get started.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-5">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">How Do We Use Our Funds</h2>
+            <div class="content">
+              <p>Responsible leadership means more than just doing good work—it means making the most out of every donation we receive.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-5">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">What Causes Do We Support?</h2>
+            <div class="content">
+              <p>We have identified specific causes to target to maximize our local and global impact. At the same time, we understand that each community has its own unique needs and concerns. Through our network of resources and partners, we help clubs focus their service efforts in promoting peace, fighting disease, providing clean water, saving mothers and children, supporting education, and growing local economies.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- ======= Call To Action Section ======= -->
+  <section style="background:none; padding:0;" id="call-to-action" class="call-to-action">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <a target="_blank" class="cta-btn" href="https://www.rotary.org/en/about-rotary">To Know More About Rotary Click Here »</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Call To Action Section --><br>
+
+
+
+
+
+</main><!-- End #main -->
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+How To Become A Donor
+{% endblock %}
+{% block style %}
+<style media="screen">
+
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>How To Become A Donor</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>How To Become A Donor</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h3 class="title">Living Donation</h3>
+            <div class="content">
+              <p>Organ Donation is a legal process in India with no interference. The Indian government enacted the Transplantation of Human Organs Act (THOA), 1994, which allows organ donation. It also legalized the concept of ‘brain death‘ which is a condition of irreversible and complete cessation of all brain functions. In such situation the person is kept on artificial support to fulfill the oxygen requirement of vital organs in the body and in that case, the patient’s organ can be transplanted to terminally ill patients.</p>
+              <h3>WHO CAN BE A DONOR?</h3>
+              <p>It’s a boon for the mankind that anybody can be a donor, as there is no age limit for being a donor. The research says that anyone can be a donor ranging from a new born till senior citizens, that too without any complications. Medical suitability for donation is determined at the time of death Yes, there are some considering factors which includes the nature of death of the donor and the condition of the organs/tissues at the time of death.</p>
+              <p>For a donor younger than 18 years, guardian/parent consent form is must to be signed before donation. Adult donors just have to make a wish for donating their organs to terminally ill patients after filling the donor card. Make sure that you inform your family about your wish as they might be asked to fill the consent form as the part of the procedure.</p>
+              <p>If a person previously have any medical condition the also he/she can donate. Transplant professionals will evaluate the condition of the organs at the time of death and determine if the organs are suitable for donation. One should consider themself as a potential organ and tissue donor, and should indicate their intent to donate on their driver’s license, donor card, or state donor registry, and discuss your decision with family members.</p>
+
+    </div>
+  </section><!-- End Blog Details Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+
+      <div class="row gy-4" data-aos="fade-up">
+        <div class="col-lg-4">
+          <img src="{% static 'img/11.jpg'%} " class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="content ps-lg-5">
+            <h3 style="font-size:28px">There are three simple steps and you are a DONOR:</h3>
+            <br>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Make a commitment to yourself for donation.</li>
+              <li><i class="bi bi-check-circle-fill"></i>  Register your commitment here: (Donor Registration) and always carry your donor card with you.</li>
+              <li><i class="bi bi-check-circle-fill"></i>  Inform near and dear ones: never keep your decision a secret and always share that to as many number of people,
+   so that they also get inspired by your decision that will help them in taking a step forward.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+
+
+
+</main><!-- End #main -->
+
+{% endblock %}

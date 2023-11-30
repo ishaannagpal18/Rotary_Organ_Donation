@@ -1,0 +1,101 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Living Donation
+{% endblock %}
+{% block style %}
+<style media="screen">
+
+</style>
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/static/img/about-header.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+
+      <h2>Living Donation</h2>
+      <ol>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li>Living Donation</li>
+      </ol>
+
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">Living Donation</h2>
+            <div class="content">
+              <blockquote>
+                <p>Living donation means when a living person donates his/her organ (or part of organ) to other person for transplantation. In such situation the donor is known as “Living donor“.</p>
+              </blockquote>
+
+    </div>
+  </section><!-- End Blog Details Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+
+      <div class="row gy-4" data-aos="fade-up">
+        <div class="col-lg-4">
+          <img src="{% static 'img/10.jpg'%} " class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="content ps-lg-5">
+            <h3></h3>
+            <p style="color:#000;">
+              Both above are part of Directed Donation.
+            <br><br>If there is no relation between the donor and the recipient, then this is called as Non- Directed Donation.
+          <br><br>A benefit of living donation over deceased donation is that, the post transplant recovery is much faster in Living Donation. For e.g A Kidney transplant done from a living donor will respond quickly than from a deceased donor’s kidney, where the recipient requires dialysis until the kidney starts functioning.
+        <br><br>The organs that can be transplanted by living donation are:</p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Kidney (most commonly)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Part of Lungs, Liver and pancreas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row g-5">
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-details">
+            <h2 class="title">Living Donation</h2>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>We categorize Live donors under two categories:</p>
+                  <h3>1. Related Donation:</h3>
+                  <p>Here the family members who are genetically related such as parent, brother, sister or child donates their organ to the recipient. The major benefit of such type of donation is that since the donor and the recipient being genetically similar, this reduces the chances of organ rejection to minimum.</p>
+                  <h3>2. Non Related Donation:</h3>
+                  <p>Here the donor is a close friend, spouse or in law, who donate their organ to the recipient. But in this type the donation is only possible when the donor and the recipient matches all the criteria necessary for a successful donation. The organ rejection rate cannot be governed in this case.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="{% static 'img/9.jpg'%} " alt="" class="img-fluid">
+                </div>
+              </div>
+
+
+    </div>
+  </section><!-- End Blog Details Section -->
+
+
+</main><!-- End #main -->
+
+{% endblock %}
